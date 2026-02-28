@@ -1,0 +1,4 @@
+﻿  Building Custom Rule D:/WorkSpace/Reshade_Ex/reshade/deps/CMakeLists.txt
+C:\Program Files\Microsoft Visual Studio\18\Community\MSBuild\Microsoft\VC\v180\Microsoft.CppCommon.targets(254,5): warning MSB8065: Custom build for item "D:\WorkSpace\Reshade_Ex\reshade\deps\CMakeLists.txt" succeeded, but specified output "d:\workspace\reshade_ex\reshade\build\deps\cmakefiles\generate.stamp" has not been created. This may cause incremental build to work incorrectly.
+  stb_impl.c
+  stb.vcxproj -> D:\WorkSpace\Reshade_Ex\reshade\build\deps\Debug\stb.lib

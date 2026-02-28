@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\effect_codegen_dxbc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\effect_codegen_glsl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\effect_codegen_hlsl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\effect_codegen_spirv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\effect_expression.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\effect_lexer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\effect_parser_exp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\effect_parser_stmt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\effect_preprocessor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\effect_symbol_table.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\effect_symbol_table_intrinsics.inl">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\effect_codegen.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\effect_expression.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\effect_lexer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\effect_module.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\effect_parser.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\effect_preprocessor.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\effect_symbol_table.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\effect_token.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\WorkSpace\Reshade_Ex\reshade\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{D440A940-A8F2-3B95-BFE7-6F3231A2A5C8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{013FA296-6708-37A0-BFE5-DF6A18026C06}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

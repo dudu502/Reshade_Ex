@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Solution>
+	<Configurations>
+		<BuildType Name="Debug"/>
+		<BuildType Name="Release"/>
+		<Platform Name="x64"/>
+	</Configurations>
+	<Project Path="ALL_BUILD.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="9b2bd169-2668-34d9-82a1-522af72ed089" DefaultStartup="true">
+		<BuildDependency Project="deps/ImGui.vcxproj"/>
+		<BuildDependency Project="deps/MinHook.vcxproj"/>
+		<BuildDependency Project="ReShade.vcxproj"/>
+		<BuildDependency Project="ReShadeFX.vcxproj"/>
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="deps/fpng.vcxproj"/>
+		<BuildDependency Project="deps/glad.vcxproj"/>
+		<BuildDependency Project="deps/jxl.vcxproj"/>
+		<BuildDependency Project="deps/stb.vcxproj"/>
+		<Build Solution="Debug|*" Project="false"/>
+		<Build Solution="Release|*" Project="false"/>
+	</Project>
+	<Project Path="deps/ImGui.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="081911bb-aadb-3dbf-b4c0-6f2bbefaf12f">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="deps/MinHook.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="9872ab23-67f9-3c04-8421-c3334e27e8f4">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="ReShade.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="4ffc446e-3b09-330d-89f9-318b9dbb4ef0">
+		<BuildDependency Project="deps/ImGui.vcxproj"/>
+		<BuildDependency Project="deps/MinHook.vcxproj"/>
+		<BuildDependency Project="ReShadeFX.vcxproj"/>
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="deps/fpng.vcxproj"/>
+		<BuildDependency Project="deps/glad.vcxproj"/>
+		<BuildDependency Project="deps/jxl.vcxproj"/>
+		<BuildDependency Project="deps/stb.vcxproj"/>
+	</Project>
+	<Project Path="ReShadeFX.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="9a90c64b-4706-3de7-8bf0-aef37ceb967a">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="ZERO_CHECK.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="f3086f5c-571c-36ac-9e0b-909046d0d3c8"/>
+	<Project Path="deps/fpng.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="286a7be2-bcbd-3ec5-8ca4-3ec08800b23a">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="deps/glad.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="c5cc454b-85b6-3ea6-852f-6f7360ef92af">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="deps/jxl.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="208445ad-a8ef-3601-b1c7-182a4f478911">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="deps/stb.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="9d5737ff-2d2a-315e-867f-4a5813f154cc">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+</Solution>

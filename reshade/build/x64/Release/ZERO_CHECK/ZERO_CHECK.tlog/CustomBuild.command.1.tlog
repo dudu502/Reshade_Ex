@@ -1,0 +1,10 @@
+^D:\WORKSPACE\RESHADE_EX\RESHADE\BUILD\CMAKEFILES\EEB1F1977BED91CC3AE60893E3384645\GENERATE.STAMP.RULE
+setlocal
+D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\bin\cmake.exe -SD:/WorkSpace/Reshade_Ex/reshade -BD:/WorkSpace/Reshade_Ex/reshade/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/WorkSpace/Reshade_Ex/reshade/build/ReShade.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,10 @@
+D:\WorkSpace\Reshade_Ex\reshade\source\effect_codegen_dxbc.cpp;D:\WorkSpace\Reshade_Ex\reshade\intermediate\ReShade FX\x64\Debug\source\effect_codegen_dxbc.obj
+D:\WorkSpace\Reshade_Ex\reshade\source\effect_codegen_glsl.cpp;D:\WorkSpace\Reshade_Ex\reshade\intermediate\ReShade FX\x64\Debug\source\effect_codegen_glsl.obj
+D:\WorkSpace\Reshade_Ex\reshade\source\effect_codegen_hlsl.cpp;D:\WorkSpace\Reshade_Ex\reshade\intermediate\ReShade FX\x64\Debug\source\effect_codegen_hlsl.obj
+D:\WorkSpace\Reshade_Ex\reshade\source\effect_codegen_spirv.cpp;D:\WorkSpace\Reshade_Ex\reshade\intermediate\ReShade FX\x64\Debug\source\effect_codegen_spirv.obj
+D:\WorkSpace\Reshade_Ex\reshade\source\effect_expression.cpp;D:\WorkSpace\Reshade_Ex\reshade\intermediate\ReShade FX\x64\Debug\source\effect_expression.obj
+D:\WorkSpace\Reshade_Ex\reshade\source\effect_lexer.cpp;D:\WorkSpace\Reshade_Ex\reshade\intermediate\ReShade FX\x64\Debug\source\effect_lexer.obj
+D:\WorkSpace\Reshade_Ex\reshade\source\effect_parser_exp.cpp;D:\WorkSpace\Reshade_Ex\reshade\intermediate\ReShade FX\x64\Debug\source\effect_parser_exp.obj
+D:\WorkSpace\Reshade_Ex\reshade\source\effect_parser_stmt.cpp;D:\WorkSpace\Reshade_Ex\reshade\intermediate\ReShade FX\x64\Debug\source\effect_parser_stmt.obj
+D:\WorkSpace\Reshade_Ex\reshade\source\effect_preprocessor.cpp;D:\WorkSpace\Reshade_Ex\reshade\intermediate\ReShade FX\x64\Debug\source\effect_preprocessor.obj
+D:\WorkSpace\Reshade_Ex\reshade\source\effect_symbol_table.cpp;D:\WorkSpace\Reshade_Ex\reshade\intermediate\ReShade FX\x64\Debug\source\effect_symbol_table.obj

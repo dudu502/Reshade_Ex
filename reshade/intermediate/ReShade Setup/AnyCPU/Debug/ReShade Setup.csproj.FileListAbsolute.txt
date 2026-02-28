@@ -1,0 +1,27 @@
+D:\WorkSpace\Reshade_Ex\reshade\bin\AnyCPU\Debug\ReShade Setup.exe.config
+D:\WorkSpace\Reshade_Ex\reshade\bin\AnyCPU\Debug\ReShade Setup.exe
+D:\WorkSpace\Reshade_Ex\reshade\bin\AnyCPU\Debug\ReShade Setup.pdb
+D:\WorkSpace\Reshade_Ex\reshade\intermediate\ReShade Setup\AnyCPU\Debug\ReShade Setup.csproj.AssemblyReference.cache
+D:\WorkSpace\Reshade_Ex\reshade\intermediate\ReShade Setup\AnyCPU\Debug\Pages\SelectApiPage.baml
+D:\WorkSpace\Reshade_Ex\reshade\intermediate\ReShade Setup\AnyCPU\Debug\Pages\SelectAppPage.baml
+D:\WorkSpace\Reshade_Ex\reshade\intermediate\ReShade Setup\AnyCPU\Debug\Pages\SelectOperationPage.baml
+D:\WorkSpace\Reshade_Ex\reshade\intermediate\ReShade Setup\AnyCPU\Debug\Pages\StatusPage.baml
+D:\WorkSpace\Reshade_Ex\reshade\intermediate\ReShade Setup\AnyCPU\Debug\MainWindow.baml
+D:\WorkSpace\Reshade_Ex\reshade\intermediate\ReShade Setup\AnyCPU\Debug\Properties\App.baml
+D:\WorkSpace\Reshade_Ex\reshade\intermediate\ReShade Setup\AnyCPU\Debug\Pages\SelectAddonsPage.g.cs
+D:\WorkSpace\Reshade_Ex\reshade\intermediate\ReShade Setup\AnyCPU\Debug\Pages\SelectApiPage.g.cs
+D:\WorkSpace\Reshade_Ex\reshade\intermediate\ReShade Setup\AnyCPU\Debug\Pages\SelectAppPage.g.cs
+D:\WorkSpace\Reshade_Ex\reshade\intermediate\ReShade Setup\AnyCPU\Debug\Pages\SelectEffectsPage.g.cs
+D:\WorkSpace\Reshade_Ex\reshade\intermediate\ReShade Setup\AnyCPU\Debug\Pages\SelectOperationPage.g.cs
+D:\WorkSpace\Reshade_Ex\reshade\intermediate\ReShade Setup\AnyCPU\Debug\Pages\StatusPage.g.cs
+D:\WorkSpace\Reshade_Ex\reshade\intermediate\ReShade Setup\AnyCPU\Debug\MainWindow.g.cs
+D:\WorkSpace\Reshade_Ex\reshade\intermediate\ReShade Setup\AnyCPU\Debug\Properties\App.g.cs
+D:\WorkSpace\Reshade_Ex\reshade\intermediate\ReShade Setup\AnyCPU\Debug\GeneratedInternalTypeHelper.g.cs
+D:\WorkSpace\Reshade_Ex\reshade\intermediate\ReShade Setup\AnyCPU\Debug\ReShade Setup_MarkupCompile.cache
+D:\WorkSpace\Reshade_Ex\reshade\intermediate\ReShade Setup\AnyCPU\Debug\ReShade Setup_MarkupCompile.lref
+D:\WorkSpace\Reshade_Ex\reshade\intermediate\ReShade Setup\AnyCPU\Debug\Pages\SelectAddonsPage.baml
+D:\WorkSpace\Reshade_Ex\reshade\intermediate\ReShade Setup\AnyCPU\Debug\Pages\SelectEffectsPage.baml
+D:\WorkSpace\Reshade_Ex\reshade\intermediate\ReShade Setup\AnyCPU\Debug\ReShade Setup.g.resources
+D:\WorkSpace\Reshade_Ex\reshade\intermediate\ReShade Setup\AnyCPU\Debug\ReShade Setup.csproj.CoreCompileInputs.cache
+D:\WorkSpace\Reshade_Ex\reshade\intermediate\ReShade Setup\AnyCPU\Debug\ReShade Setup.exe
+D:\WorkSpace\Reshade_Ex\reshade\intermediate\ReShade Setup\AnyCPU\Debug\ReShade Setup.pdb

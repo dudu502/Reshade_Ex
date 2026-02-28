@@ -1,0 +1,515 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4FFC446E-3B09-330D-89F9-318B9DBB4EF0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ReShade</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\WorkSpace\Reshade_Ex\reshade\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ReShade.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ReShade64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\WorkSpace\Reshade_Ex\reshade\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ReShade.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ReShade64</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\WorkSpace\Reshade_Ex\reshade\include;D:\WorkSpace\Reshade_Ex\reshade\res;D:\WorkSpace\Reshade_Ex\reshade\source;D:\WorkSpace\Reshade_Ex\reshade\deps\d3d12on7\include;D:\WorkSpace\Reshade_Ex\reshade\deps\d3d12\include\directx;D:\WorkSpace\Reshade_Ex\reshade\deps\d3d911on12\include;D:\WorkSpace\Reshade_Ex\reshade\deps\fpng\src;D:\WorkSpace\Reshade_Ex\reshade\deps\glad\target\include;D:\WorkSpace\Reshade_Ex\reshade\deps\imgui;D:\WorkSpace\Reshade_Ex\reshade\deps\jxl_simple_lossless;D:\WorkSpace\Reshade_Ex\reshade\deps\minhook\include;D:\WorkSpace\Reshade_Ex\reshade\deps\openvr\headers;D:\WorkSpace\Reshade_Ex\reshade\deps\openvr\src;D:\WorkSpace\Reshade_Ex\reshade\deps\openxr\include;D:\WorkSpace\Reshade_Ex\reshade\deps\openxr\src;D:\WorkSpace\Reshade_Ex\reshade\deps\stb;D:\WorkSpace\Reshade_Ex\reshade\deps\stb_image;D:\WorkSpace\Reshade_Ex\reshade\deps\utfcpp\source;D:\WorkSpace\Reshade_Ex\reshade\deps\vma\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:threadSafeInit- /utf-8 /Zc:char8_t-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;RESHADE_GUI;RESHADE_API_LIBRARY_EXPORT;RESHADE_ADDON=2;RESHADE_LOCALIZATION;RESHADE_VERBOSE_LOG;_GDI32_;WINSOCK_API_LINKAGE=;_UNICODE;_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS;_DEBUG;FPNG_NO_STDIO;VK_USE_PLATFORM_WIN32_KHR;ImTextureID=ImU64;IMGUI_USER_CONFIG="../imgui_config.hpp";IMGUI_DEFINE_MATH_OPERATORS;IMGUI_DISABLE_OBSOLETE_FUNCTIONS;IMGUI_DISABLE_FILE_FUNCTIONS;IMGUI_DISABLE_WIN32_DEFAULT_IME_FUNCTIONS;OPENVR_BUILD_STATIC;OPENVR_NO_STL;XR_USE_PLATFORM_WIN32;STBI_NO_STDIO;STBI_WRITE_NO_STDIO;_CRT_SECURE_NO_WARNINGS;UTF_CPP_CPLUSPLUS=201703L;VMA_STATIC_VULKAN_FUNCTIONS=0;VMA_DYNAMIC_VULKAN_FUNCTIONS=0;VMA_STATS_STRING_ENABLED=0;WIN32_LEAN_AND_MEAN;NOGDICAPMASKS;NOMENUS;NOICONS;NOKEYSTATES;NOSYSCOMMANDS;NORASTEROPS;NOATOM;NOCOLOR;NODRAWTEXT;NOMEMMGR;NOMETAFILE;NOMINMAX;NOOPENFILE;NOSCROLL;NOSERVICE;NOSOUND;NOTEXTMETRIC;NOCOMM;NOKANJI;NOHELP;NOPROFILER;NODEFERWINDOWPOS;NOMCX;CMAKE_INTDIR="Debug";ReShade_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;RESHADE_GUI;RESHADE_API_LIBRARY_EXPORT;RESHADE_ADDON=2;RESHADE_LOCALIZATION;RESHADE_VERBOSE_LOG;_GDI32_;WINSOCK_API_LINKAGE=;_UNICODE;_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS;FPNG_NO_STDIO;VK_USE_PLATFORM_WIN32_KHR;ImTextureID=ImU64;IMGUI_USER_CONFIG=\"../imgui_config.hpp\";IMGUI_DEFINE_MATH_OPERATORS;IMGUI_DISABLE_OBSOLETE_FUNCTIONS;IMGUI_DISABLE_FILE_FUNCTIONS;IMGUI_DISABLE_WIN32_DEFAULT_IME_FUNCTIONS;OPENVR_BUILD_STATIC;OPENVR_NO_STL;XR_USE_PLATFORM_WIN32;STBI_NO_STDIO;STBI_WRITE_NO_STDIO;_CRT_SECURE_NO_WARNINGS;UTF_CPP_CPLUSPLUS=201703L;VMA_STATIC_VULKAN_FUNCTIONS=0;VMA_DYNAMIC_VULKAN_FUNCTIONS=0;VMA_STATS_STRING_ENABLED=0;WIN32_LEAN_AND_MEAN;NOGDICAPMASKS;NOMENUS;NOICONS;NOKEYSTATES;NOSYSCOMMANDS;NORASTEROPS;NOATOM;NOCOLOR;NODRAWTEXT;NOMEMMGR;NOMETAFILE;NOMINMAX;NOOPENFILE;NOSCROLL;NOSERVICE;NOSOUND;NOTEXTMETRIC;NOCOMM;NOKANJI;NOHELP;NOPROFILER;NODEFERWINDOWPOS;NOMCX;CMAKE_INTDIR=\"Debug\";ReShade_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\WorkSpace\Reshade_Ex\reshade\include;D:\WorkSpace\Reshade_Ex\reshade\res;D:\WorkSpace\Reshade_Ex\reshade\source;D:\WorkSpace\Reshade_Ex\reshade\deps\d3d12on7\include;D:\WorkSpace\Reshade_Ex\reshade\deps\d3d12\include\directx;D:\WorkSpace\Reshade_Ex\reshade\deps\d3d911on12\include;D:\WorkSpace\Reshade_Ex\reshade\deps\fpng\src;D:\WorkSpace\Reshade_Ex\reshade\deps\glad\target\include;D:\WorkSpace\Reshade_Ex\reshade\deps\imgui;D:\WorkSpace\Reshade_Ex\reshade\deps\jxl_simple_lossless;D:\WorkSpace\Reshade_Ex\reshade\deps\minhook\include;D:\WorkSpace\Reshade_Ex\reshade\deps\openvr\headers;D:\WorkSpace\Reshade_Ex\reshade\deps\openvr\src;D:\WorkSpace\Reshade_Ex\reshade\deps\openxr\include;D:\WorkSpace\Reshade_Ex\reshade\deps\openxr\src;D:\WorkSpace\Reshade_Ex\reshade\deps\stb;D:\WorkSpace\Reshade_Ex\reshade\deps\stb_image;D:\WorkSpace\Reshade_Ex\reshade\deps\utfcpp\source;D:\WorkSpace\Reshade_Ex\reshade\deps\vma\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\WorkSpace\Reshade_Ex\reshade\include;D:\WorkSpace\Reshade_Ex\reshade\res;D:\WorkSpace\Reshade_Ex\reshade\source;D:\WorkSpace\Reshade_Ex\reshade\deps\d3d12on7\include;D:\WorkSpace\Reshade_Ex\reshade\deps\d3d12\include\directx;D:\WorkSpace\Reshade_Ex\reshade\deps\d3d911on12\include;D:\WorkSpace\Reshade_Ex\reshade\deps\fpng\src;D:\WorkSpace\Reshade_Ex\reshade\deps\glad\target\include;D:\WorkSpace\Reshade_Ex\reshade\deps\imgui;D:\WorkSpace\Reshade_Ex\reshade\deps\jxl_simple_lossless;D:\WorkSpace\Reshade_Ex\reshade\deps\minhook\include;D:\WorkSpace\Reshade_Ex\reshade\deps\openvr\headers;D:\WorkSpace\Reshade_Ex\reshade\deps\openvr\src;D:\WorkSpace\Reshade_Ex\reshade\deps\openxr\include;D:\WorkSpace\Reshade_Ex\reshade\deps\openxr\src;D:\WorkSpace\Reshade_Ex\reshade\deps\stb;D:\WorkSpace\Reshade_Ex\reshade\deps\stb_image;D:\WorkSpace\Reshade_Ex\reshade\deps\utfcpp\source;D:\WorkSpace\Reshade_Ex\reshade\deps\vma\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Debug\ReShadeFX.lib;deps\Debug\fpng.lib;deps\Debug\glad.lib;deps\Debug\ImGui.lib;deps\Debug\jxl.lib;deps\Debug\MinHook.lib;deps\Debug\stb.lib;XInput.lib;Runtime_BOE_18NBSDK_ETDX.lib;d3dcompiler.lib;dwmapi.lib;dxguid.lib;ShLwApi.lib;wininet.lib;WS2_32.lib;Version.lib;WinMM.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/WorkSpace/Reshade_Ex/reshade/deps/boe/lib;D:/WorkSpace/Reshade_Ex/reshade/deps/boe/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/WorkSpace/Reshade_Ex/reshade/build/Debug/ReShade.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ModuleDefinitionFile>D:/WorkSpace/Reshade_Ex/reshade/res/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>D:/WorkSpace/Reshade_Ex/reshade/build/Debug/ReShade.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\WorkSpace\Reshade_Ex\reshade\include;D:\WorkSpace\Reshade_Ex\reshade\res;D:\WorkSpace\Reshade_Ex\reshade\source;D:\WorkSpace\Reshade_Ex\reshade\deps\d3d12on7\include;D:\WorkSpace\Reshade_Ex\reshade\deps\d3d12\include\directx;D:\WorkSpace\Reshade_Ex\reshade\deps\d3d911on12\include;D:\WorkSpace\Reshade_Ex\reshade\deps\fpng\src;D:\WorkSpace\Reshade_Ex\reshade\deps\glad\target\include;D:\WorkSpace\Reshade_Ex\reshade\deps\imgui;D:\WorkSpace\Reshade_Ex\reshade\deps\jxl_simple_lossless;D:\WorkSpace\Reshade_Ex\reshade\deps\minhook\include;D:\WorkSpace\Reshade_Ex\reshade\deps\openvr\headers;D:\WorkSpace\Reshade_Ex\reshade\deps\openvr\src;D:\WorkSpace\Reshade_Ex\reshade\deps\openxr\include;D:\WorkSpace\Reshade_Ex\reshade\deps\openxr\src;D:\WorkSpace\Reshade_Ex\reshade\deps\stb;D:\WorkSpace\Reshade_Ex\reshade\deps\stb_image;D:\WorkSpace\Reshade_Ex\reshade\deps\utfcpp\source;D:\WorkSpace\Reshade_Ex\reshade\deps\vma\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /Zc:threadSafeInit- /utf-8 /Zc:char8_t-</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;RESHADE_GUI;RESHADE_API_LIBRARY_EXPORT;RESHADE_ADDON=2;RESHADE_LOCALIZATION;_GDI32_;WINSOCK_API_LINKAGE=;_UNICODE;_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS;FPNG_NO_STDIO;VK_USE_PLATFORM_WIN32_KHR;ImTextureID=ImU64;IMGUI_USER_CONFIG="../imgui_config.hpp";IMGUI_DEFINE_MATH_OPERATORS;IMGUI_DISABLE_OBSOLETE_FUNCTIONS;IMGUI_DISABLE_FILE_FUNCTIONS;IMGUI_DISABLE_WIN32_DEFAULT_IME_FUNCTIONS;OPENVR_BUILD_STATIC;OPENVR_NO_STL;XR_USE_PLATFORM_WIN32;STBI_NO_STDIO;STBI_WRITE_NO_STDIO;_CRT_SECURE_NO_WARNINGS;UTF_CPP_CPLUSPLUS=201703L;VMA_STATIC_VULKAN_FUNCTIONS=0;VMA_DYNAMIC_VULKAN_FUNCTIONS=0;VMA_STATS_STRING_ENABLED=0;WIN32_LEAN_AND_MEAN;NOGDICAPMASKS;NOMENUS;NOICONS;NOKEYSTATES;NOSYSCOMMANDS;NORASTEROPS;NOATOM;NOCOLOR;NODRAWTEXT;NOMEMMGR;NOMETAFILE;NOMINMAX;NOOPENFILE;NOSCROLL;NOSERVICE;NOSOUND;NOTEXTMETRIC;NOCOMM;NOKANJI;NOHELP;NOPROFILER;NODEFERWINDOWPOS;NOMCX;CMAKE_INTDIR="Release";ReShade_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;RESHADE_GUI;RESHADE_API_LIBRARY_EXPORT;RESHADE_ADDON=2;RESHADE_LOCALIZATION;_GDI32_;WINSOCK_API_LINKAGE=;_UNICODE;_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS;FPNG_NO_STDIO;VK_USE_PLATFORM_WIN32_KHR;ImTextureID=ImU64;IMGUI_USER_CONFIG=\"../imgui_config.hpp\";IMGUI_DEFINE_MATH_OPERATORS;IMGUI_DISABLE_OBSOLETE_FUNCTIONS;IMGUI_DISABLE_FILE_FUNCTIONS;IMGUI_DISABLE_WIN32_DEFAULT_IME_FUNCTIONS;OPENVR_BUILD_STATIC;OPENVR_NO_STL;XR_USE_PLATFORM_WIN32;STBI_NO_STDIO;STBI_WRITE_NO_STDIO;_CRT_SECURE_NO_WARNINGS;UTF_CPP_CPLUSPLUS=201703L;VMA_STATIC_VULKAN_FUNCTIONS=0;VMA_DYNAMIC_VULKAN_FUNCTIONS=0;VMA_STATS_STRING_ENABLED=0;WIN32_LEAN_AND_MEAN;NOGDICAPMASKS;NOMENUS;NOICONS;NOKEYSTATES;NOSYSCOMMANDS;NORASTEROPS;NOATOM;NOCOLOR;NODRAWTEXT;NOMEMMGR;NOMETAFILE;NOMINMAX;NOOPENFILE;NOSCROLL;NOSERVICE;NOSOUND;NOTEXTMETRIC;NOCOMM;NOKANJI;NOHELP;NOPROFILER;NODEFERWINDOWPOS;NOMCX;CMAKE_INTDIR=\"Release\";ReShade_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\WorkSpace\Reshade_Ex\reshade\include;D:\WorkSpace\Reshade_Ex\reshade\res;D:\WorkSpace\Reshade_Ex\reshade\source;D:\WorkSpace\Reshade_Ex\reshade\deps\d3d12on7\include;D:\WorkSpace\Reshade_Ex\reshade\deps\d3d12\include\directx;D:\WorkSpace\Reshade_Ex\reshade\deps\d3d911on12\include;D:\WorkSpace\Reshade_Ex\reshade\deps\fpng\src;D:\WorkSpace\Reshade_Ex\reshade\deps\glad\target\include;D:\WorkSpace\Reshade_Ex\reshade\deps\imgui;D:\WorkSpace\Reshade_Ex\reshade\deps\jxl_simple_lossless;D:\WorkSpace\Reshade_Ex\reshade\deps\minhook\include;D:\WorkSpace\Reshade_Ex\reshade\deps\openvr\headers;D:\WorkSpace\Reshade_Ex\reshade\deps\openvr\src;D:\WorkSpace\Reshade_Ex\reshade\deps\openxr\include;D:\WorkSpace\Reshade_Ex\reshade\deps\openxr\src;D:\WorkSpace\Reshade_Ex\reshade\deps\stb;D:\WorkSpace\Reshade_Ex\reshade\deps\stb_image;D:\WorkSpace\Reshade_Ex\reshade\deps\utfcpp\source;D:\WorkSpace\Reshade_Ex\reshade\deps\vma\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\WorkSpace\Reshade_Ex\reshade\include;D:\WorkSpace\Reshade_Ex\reshade\res;D:\WorkSpace\Reshade_Ex\reshade\source;D:\WorkSpace\Reshade_Ex\reshade\deps\d3d12on7\include;D:\WorkSpace\Reshade_Ex\reshade\deps\d3d12\include\directx;D:\WorkSpace\Reshade_Ex\reshade\deps\d3d911on12\include;D:\WorkSpace\Reshade_Ex\reshade\deps\fpng\src;D:\WorkSpace\Reshade_Ex\reshade\deps\glad\target\include;D:\WorkSpace\Reshade_Ex\reshade\deps\imgui;D:\WorkSpace\Reshade_Ex\reshade\deps\jxl_simple_lossless;D:\WorkSpace\Reshade_Ex\reshade\deps\minhook\include;D:\WorkSpace\Reshade_Ex\reshade\deps\openvr\headers;D:\WorkSpace\Reshade_Ex\reshade\deps\openvr\src;D:\WorkSpace\Reshade_Ex\reshade\deps\openxr\include;D:\WorkSpace\Reshade_Ex\reshade\deps\openxr\src;D:\WorkSpace\Reshade_Ex\reshade\deps\stb;D:\WorkSpace\Reshade_Ex\reshade\deps\stb_image;D:\WorkSpace\Reshade_Ex\reshade\deps\utfcpp\source;D:\WorkSpace\Reshade_Ex\reshade\deps\vma\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Release\ReShadeFX.lib;deps\Release\fpng.lib;deps\Release\glad.lib;deps\Release\ImGui.lib;deps\Release\jxl.lib;deps\Release\MinHook.lib;deps\Release\stb.lib;XInput.lib;Runtime_BOE_18NBSDK_ETDX.lib;d3dcompiler.lib;dwmapi.lib;dxguid.lib;ShLwApi.lib;wininet.lib;WS2_32.lib;Version.lib;WinMM.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/WorkSpace/Reshade_Ex/reshade/deps/boe/lib;D:/WorkSpace/Reshade_Ex/reshade/deps/boe/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/WorkSpace/Reshade_Ex/reshade/build/Release/ReShade.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <ModuleDefinitionFile>D:/WorkSpace/Reshade_Ex/reshade/res/exports.def</ModuleDefinitionFile>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>D:/WorkSpace/Reshade_Ex/reshade/build/Release/ReShade.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\WorkSpace\Reshade_Ex\reshade\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/WorkSpace/Reshade_Ex/reshade/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\bin\cmake.exe -SD:/WorkSpace/Reshade_Ex/reshade -BD:/WorkSpace/Reshade_Ex/reshade/build --check-stamp-file D:/WorkSpace/Reshade_Ex/reshade/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\CMakeCInformation.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\CMakeCXXInformation.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\CMakeGenericSystem.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\CMakeRCInformation.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Compiler\MSVC-C.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Compiler\MSVC.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Internal\CMakeCLinkerInformation.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Linker\MSVC-C.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Linker\MSVC.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-C.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Platform\Windows-MSVC-C.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Platform\Windows.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake;D:\WorkSpace\Reshade_Ex\reshade\build\CMakeFiles\4.2.3\CMakeCCompiler.cmake;D:\WorkSpace\Reshade_Ex\reshade\build\CMakeFiles\4.2.3\CMakeCXXCompiler.cmake;D:\WorkSpace\Reshade_Ex\reshade\build\CMakeFiles\4.2.3\CMakeRCCompiler.cmake;D:\WorkSpace\Reshade_Ex\reshade\build\CMakeFiles\4.2.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\WorkSpace\Reshade_Ex\reshade\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/WorkSpace/Reshade_Ex/reshade/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\bin\cmake.exe -SD:/WorkSpace/Reshade_Ex/reshade -BD:/WorkSpace/Reshade_Ex/reshade/build --check-stamp-file D:/WorkSpace/Reshade_Ex/reshade/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\CMakeCInformation.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\CMakeCXXInformation.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\CMakeGenericSystem.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\CMakeRCInformation.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Compiler\MSVC-C.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Compiler\MSVC.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Internal\CMakeCLinkerInformation.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Linker\MSVC-C.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Linker\MSVC.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-C.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Platform\Windows-MSVC-C.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Platform\Windows.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake;D:\WorkSpace\Reshade_Ex\reshade\build\CMakeFiles\4.2.3\CMakeCCompiler.cmake;D:\WorkSpace\Reshade_Ex\reshade\build\CMakeFiles\4.2.3\CMakeCXXCompiler.cmake;D:\WorkSpace\Reshade_Ex\reshade\build\CMakeFiles\4.2.3\CMakeRCCompiler.cmake;D:\WorkSpace\Reshade_Ex\reshade\build\CMakeFiles\4.2.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\WorkSpace\Reshade_Ex\reshade\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\examples\09-depth\generic_depth_addon.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">reshade.hpp;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions);BUILTIN_ADDON</PreprocessorDefinitions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">reshade.hpp;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions);BUILTIN_ADDON</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\examples\10-texture_overlay\texture_overlay_addon.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\examples\15-effect_runtime_sync\runtime_sync_addon.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">reshade.hpp;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions);BUILTIN_ADDON</PreprocessorDefinitions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">reshade.hpp;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions);BUILTIN_ADDON</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\examples\18-sbs_game_bridge\sbs_game_bridge_addon.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">reshade.hpp;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions);BUILTIN_ADDON</PreprocessorDefinitions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">reshade.hpp;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions);BUILTIN_ADDON</PreprocessorDefinitions>
+    </ClCompile>
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\res\fonts\forkawesome.h" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\res\fonts\forkawesome.inl" />
+    <None Include="D:\WorkSpace\Reshade_Ex\reshade\res\exports.def" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\res\resource.h" />
+    <ResourceCompile Include="D:\WorkSpace\Reshade_Ex\reshade\res\resource.rc" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\res\version.h" />
+    <None Include="D:\WorkSpace\Reshade_Ex\reshade\res\version.rc2">
+    </None>
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\addon.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\addon.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\addon_manager.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\addon_manager.hpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\com_ptr.hpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\com_utils.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\dll_log.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\dll_log.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\dll_main.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\dll_resources.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\dll_resources.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\hook.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\hook.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\hook_manager.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\hook_manager.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\imgui_code_editor.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\imgui_code_editor.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\imgui_function_table.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\imgui_function_table_18600.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\imgui_function_table_18600.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\imgui_function_table_18971.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\imgui_function_table_18971.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\imgui_function_table_19000.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\imgui_function_table_19000.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\imgui_function_table_19040.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\imgui_function_table_19040.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\imgui_function_table_19180.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\imgui_function_table_19180.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\imgui_function_table_19191.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\imgui_function_table_19191.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\imgui_function_table_19222.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\imgui_function_table_19222.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\imgui_function_table_19250.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\imgui_function_table_19250.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\imgui_widgets.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\imgui_widgets.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\ini_file.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\ini_file.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\input.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\input.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\input_gamepad.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions);_WIN32_WINNT=_WIN32_WINNT_WIN7</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions);_WIN32_WINNT=_WIN32_WINNT_WIN7</PreprocessorDefinitions>
+    </ClCompile>
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\input_gamepad.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\platform_utils.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\platform_utils.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\runtime.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\runtime.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\runtime_api.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\runtime_gui.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\runtime_internal.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\runtime_manager.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\runtime_manager.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\runtime_update_check.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\state_block.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\state_block.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\opengl\opengl.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\opengl\opengl_hooks.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\opengl\opengl_hooks_ffp.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\opengl\opengl_hooks_wgl.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\opengl\opengl_impl_command_list.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\opengl\opengl_impl_command_queue.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\opengl\opengl_impl_device.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\opengl\opengl_impl_device.hpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\opengl\opengl_impl_device_context.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\opengl\opengl_impl_state_block.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\opengl\opengl_impl_state_block.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\opengl\opengl_impl_swapchain.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\opengl\opengl_impl_swapchain.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\opengl\opengl_impl_type_convert.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\opengl\opengl_impl_type_convert.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\vulkan\vulkan.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\vulkan\vulkan_hooks.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\vulkan\vulkan_hooks_command_list.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\vulkan\vulkan_hooks_device.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\vulkan\vulkan_hooks_instance.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\vulkan\vulkan_hooks_swapchain.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\vulkan\vulkan_impl_command_list.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\vulkan\vulkan_impl_command_list.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\vulkan\vulkan_impl_command_list_immediate.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\vulkan\vulkan_impl_command_list_immediate.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\vulkan\vulkan_impl_command_queue.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\vulkan\vulkan_impl_command_queue.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\vulkan\vulkan_impl_device.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions);VMA_IMPLEMENTATION</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions);VMA_IMPLEMENTATION</PreprocessorDefinitions>
+    </ClCompile>
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\vulkan\vulkan_impl_device.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\vulkan\vulkan_impl_swapchain.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\vulkan\vulkan_impl_swapchain.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\vulkan\vulkan_impl_type_convert.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\vulkan\vulkan_impl_type_convert.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d2d1\d2d1.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d10\d3d10.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d10\d3d10_device.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d10\d3d10_device.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d10\d3d10_impl_command_list.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d10\d3d10_impl_command_queue.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d10\d3d10_impl_device.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d10\d3d10_impl_device.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d10\d3d10_impl_state_block.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d10\d3d10_impl_state_block.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d10\d3d10_impl_swapchain.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d10\d3d10_impl_swapchain.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d10\d3d10_impl_type_convert.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d10\d3d10_impl_type_convert.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d10\d3d10_resource.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d10\d3d10_resource.hpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d10\d3d10_resource_call_vtable.inl" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d11\d3d11.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d11\d3d11on12.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d11\d3d11on12_device.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d11\d3d11on12_device.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d11\d3d11_command_list.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d11\d3d11_command_list.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d11\d3d11_device.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d11\d3d11_device.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d11\d3d11_device_context.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d11\d3d11_device_context.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d11\d3d11_extensions.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d11\d3d11_extensions.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d11\d3d11_impl_command_list.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d11\d3d11_impl_command_queue.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d11\d3d11_impl_device.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d11\d3d11_impl_device.hpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d11\d3d11_impl_device_context.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d11\d3d11_impl_state_block.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d11\d3d11_impl_state_block.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d11\d3d11_impl_swapchain.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d11\d3d11_impl_swapchain.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d11\d3d11_impl_type_convert.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d11\d3d11_impl_type_convert.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d11\d3d11_resource.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d11\d3d11_resource.hpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d11\d3d11_resource_call_vtable.inl" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d12\d3d12.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d12\d3d12_command_list.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d12\d3d12_command_list.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d12\d3d12_command_queue.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d12\d3d12_command_queue.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d12\d3d12_command_queue_downlevel.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d12\d3d12_command_queue_downlevel.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d12\d3d12_descriptor_heap.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d12\d3d12_device.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d12\d3d12_device_downlevel.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d12\d3d12_extensions.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d12\d3d12_extensions.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d12\d3d12_impl_command_list.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d12\d3d12_impl_command_list.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d12\d3d12_impl_command_list_immediate.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d12\d3d12_impl_command_list_immediate.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d12\d3d12_impl_command_queue.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d12\d3d12_impl_command_queue.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d12\d3d12_impl_device.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d12\d3d12_impl_device.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d12\d3d12_impl_swapchain.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d12\d3d12_impl_swapchain.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d12\d3d12_impl_type_convert.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d12\d3d12_impl_type_convert.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d12\d3d12_pipeline_library.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d12\d3d12_pipeline_library.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d12\d3d12_pix.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d12\d3d12_resource.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d12\d3d12_resource.hpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d12\d3d12_resource_call_vtable.inl" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d9\d3d9.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d9\d3d9on12.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d9\d3d9on12_device.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d9\d3d9on12_device.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d9\d3d9_device.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d9\d3d9_impl_command_list.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d9\d3d9_impl_command_queue.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d9\d3d9_impl_device.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d9\d3d9_impl_device.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d9\d3d9_impl_state_block.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d9\d3d9_impl_state_block.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d9\d3d9_impl_swapchain.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d9\d3d9_impl_swapchain.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d9\d3d9_impl_type_convert.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d9\d3d9_impl_type_convert.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d9\d3d9_internal.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d9\d3d9_pix.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d9\d3d9_resource.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d9\d3d9_resource.hpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d9\d3d9_resource_call_vtable.inl" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d9\d3d9_swapchain.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\d3d9\d3d9_swapchain.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\ddraw\ddraw.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\dxgi\dxgi.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\dxgi\dxgi_adapter.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\dxgi\dxgi_adapter.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\dxgi\dxgi_d3d10.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\dxgi\dxgi_device.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\dxgi\dxgi_device.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\dxgi\dxgi_factory.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\dxgi\dxgi_factory.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\dxgi\dxgi_swapchain.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\dxgi\dxgi_swapchain.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\openvr\openvr.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\openvr\openvr_impl_swapchain.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\openvr\openvr_impl_swapchain.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\openxr\openxr.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\openxr\openxr_hooks.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\openxr\openxr_hooks_instance.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\openxr\openxr_hooks_swapchain.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\openxr\openxr_impl_swapchain.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\source\openxr\openxr_impl_swapchain.hpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\runtime_gui_vr.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\windows\dinput.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\windows\dinput8.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\windows\user32.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\source\windows\ws2_32.cpp" />
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\examples\18-sbs_game_bridge\RenderInterWave.cpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\deps\fpng\src\fpng.h" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\deps\imgui\imgui.h" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\deps\imgui\imgui_internal.h" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\deps\imgui_config.hpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\deps\jxl_simple_lossless\simple_lossless.h" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\deps\jxl_simple_lossless\color_encoding.h" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\deps\minhook\include\MinHook.h" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\deps\stb\stb_image.h" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\deps\stb\stb_image_resize2.h" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\deps\stb\stb_image_write.h" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\deps\stb_image\stb_image_dds.h" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\deps\stb_image\stb_image_write_hdr_png.h" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\include\reshade.hpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\include\reshade_api.hpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\include\reshade_api_device.hpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\include\reshade_api_format.hpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\include\reshade_api_pipeline.hpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\include\reshade_api_resource.hpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\include\reshade_events.hpp" />
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\include\reshade_overlay.hpp" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\WorkSpace\Reshade_Ex\reshade\build\ZERO_CHECK.vcxproj">
+      <Project>{F3086F5C-571C-36AC-9E0B-909046D0D3C8}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\WorkSpace\Reshade_Ex\reshade\build\deps\ImGui.vcxproj">
+      <Project>{081911BB-AADB-3DBF-B4C0-6F2BBEFAF12F}</Project>
+      <Name>ImGui</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WorkSpace\Reshade_Ex\reshade\build\deps\MinHook.vcxproj">
+      <Project>{9872AB23-67F9-3C04-8421-C3334E27E8F4}</Project>
+      <Name>MinHook</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WorkSpace\Reshade_Ex\reshade\build\ReShadeFX.vcxproj">
+      <Project>{9A90C64B-4706-3DE7-8BF0-AEF37CEB967A}</Project>
+      <Name>ReShadeFX</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WorkSpace\Reshade_Ex\reshade\build\deps\fpng.vcxproj">
+      <Project>{286A7BE2-BCBD-3EC5-8CA4-3EC08800B23A}</Project>
+      <Name>fpng</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WorkSpace\Reshade_Ex\reshade\build\deps\glad.vcxproj">
+      <Project>{C5CC454B-85B6-3EA6-852F-6F7360EF92AF}</Project>
+      <Name>glad</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WorkSpace\Reshade_Ex\reshade\build\deps\jxl.vcxproj">
+      <Project>{208445AD-A8EF-3601-B1C7-182A4F478911}</Project>
+      <Name>jxl</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WorkSpace\Reshade_Ex\reshade\build\deps\stb.vcxproj">
+      <Project>{9D5737FF-2D2A-315E-867F-4A5813F154CC}</Project>
+      <Name>stb</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

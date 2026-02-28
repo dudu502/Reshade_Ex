@@ -1,0 +1,13 @@
+﻿  Building Custom Rule D:/WorkSpace/Reshade_Ex/reshade/CMakeLists.txt
+  effect_codegen_dxbc.cpp
+  effect_codegen_glsl.cpp
+  effect_codegen_hlsl.cpp
+  effect_codegen_spirv.cpp
+  effect_expression.cpp
+  effect_lexer.cpp
+  effect_parser_exp.cpp
+  effect_parser_stmt.cpp
+  effect_preprocessor.cpp
+  effect_symbol_table.cpp
+  正在生成代码...
+  ReShadeFX.vcxproj -> D:\WorkSpace\Reshade_Ex\reshade\build\Debug\ReShadeFX.lib

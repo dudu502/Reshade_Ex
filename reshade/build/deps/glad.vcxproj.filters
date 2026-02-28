@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\deps\glad\target\src\gl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\deps\glad\target\src\vulkan.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\WorkSpace\Reshade_Ex\reshade\deps\glad\target\src\wgl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\deps\glad\target\include\glad\gl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\deps\glad\target\include\glad\vulkan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\WorkSpace\Reshade_Ex\reshade\deps\glad\target\include\glad\wgl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\WorkSpace\Reshade_Ex\reshade\build\CMakeFiles\e3a3ad5e60608fd3039a92d2fea02bbe\gl.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\WorkSpace\Reshade_Ex\reshade\deps\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{D4B91756-26EC-320A-A847-CE1587D251F6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{D440A940-A8F2-3B95-BFE7-6F3231A2A5C8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{013FA296-6708-37A0-BFE5-DF6A18026C06}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

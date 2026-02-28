@@ -1,0 +1,8 @@
+﻿  Building Custom Rule D:/WorkSpace/Reshade_Ex/reshade/deps/CMakeLists.txt
+  buffer.c
+  hde32.c
+  hde64.c
+  hook.c
+  trampoline.c
+  正在生成代码...
+  MinHook.vcxproj -> D:\WorkSpace\Reshade_Ex\reshade\build\deps\Release\MinHook.lib

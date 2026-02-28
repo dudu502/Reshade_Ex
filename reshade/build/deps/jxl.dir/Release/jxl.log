@@ -1,0 +1,4 @@
+﻿  Building Custom Rule D:/WorkSpace/Reshade_Ex/reshade/deps/CMakeLists.txt
+  simple_lossless.cc
+D:\WorkSpace\Reshade_Ex\reshade\deps\jxl_simple_lossless\simple_lossless.cc(2438,1): warning C4715: “simple_lossless”: 不是所有的控件路径都返回值
+  jxl.vcxproj -> D:\WorkSpace\Reshade_Ex\reshade\build\deps\Release\jxl.lib

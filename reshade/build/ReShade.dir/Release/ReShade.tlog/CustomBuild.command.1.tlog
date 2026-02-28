@@ -1,0 +1,10 @@
+^D:\WORKSPACE\RESHADE_EX\RESHADE\CMAKELISTS.TXT
+setlocal
+D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\bin\cmake.exe -SD:/WorkSpace/Reshade_Ex/reshade -BD:/WorkSpace/Reshade_Ex/reshade/build --check-stamp-file D:/WorkSpace/Reshade_Ex/reshade/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

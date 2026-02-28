@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9B2BD169-2668-34D9-82A1-522AF72ED089}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\WorkSpace\Reshade_Ex\reshade\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/WorkSpace/Reshade_Ex/reshade/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\bin\cmake.exe -SD:/WorkSpace/Reshade_Ex/reshade -BD:/WorkSpace/Reshade_Ex/reshade/build --check-stamp-file D:/WorkSpace/Reshade_Ex/reshade/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\CMakeCInformation.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\CMakeCXXInformation.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\CMakeGenericSystem.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\CMakeRCInformation.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Compiler\MSVC-C.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Compiler\MSVC.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Internal\CMakeCLinkerInformation.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Linker\MSVC-C.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Linker\MSVC.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-C.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Platform\Windows-MSVC-C.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Platform\Windows.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake;D:\WorkSpace\Reshade_Ex\reshade\build\CMakeFiles\4.2.3\CMakeCCompiler.cmake;D:\WorkSpace\Reshade_Ex\reshade\build\CMakeFiles\4.2.3\CMakeCXXCompiler.cmake;D:\WorkSpace\Reshade_Ex\reshade\build\CMakeFiles\4.2.3\CMakeRCCompiler.cmake;D:\WorkSpace\Reshade_Ex\reshade\build\CMakeFiles\4.2.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\WorkSpace\Reshade_Ex\reshade\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/WorkSpace/Reshade_Ex/reshade/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\bin\cmake.exe -SD:/WorkSpace/Reshade_Ex/reshade -BD:/WorkSpace/Reshade_Ex/reshade/build --check-stamp-file D:/WorkSpace/Reshade_Ex/reshade/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\CMakeCInformation.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\CMakeCXXInformation.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\CMakeGenericSystem.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\CMakeRCInformation.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Compiler\MSVC-C.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Compiler\MSVC.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Internal\CMakeCLinkerInformation.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Linker\MSVC-C.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Linker\MSVC.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-C.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Platform\Windows-MSVC-C.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Platform\Windows.cmake;D:\Software\cmake-4.2.3-windows-x86_64\cmake-4.2.3-windows-x86_64\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake;D:\WorkSpace\Reshade_Ex\reshade\build\CMakeFiles\4.2.3\CMakeCCompiler.cmake;D:\WorkSpace\Reshade_Ex\reshade\build\CMakeFiles\4.2.3\CMakeCXXCompiler.cmake;D:\WorkSpace\Reshade_Ex\reshade\build\CMakeFiles\4.2.3\CMakeRCCompiler.cmake;D:\WorkSpace\Reshade_Ex\reshade\build\CMakeFiles\4.2.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\WorkSpace\Reshade_Ex\reshade\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\WorkSpace\Reshade_Ex\reshade\build\ZERO_CHECK.vcxproj">
+      <Project>{F3086F5C-571C-36AC-9E0B-909046D0D3C8}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\WorkSpace\Reshade_Ex\reshade\build\deps\ImGui.vcxproj">
+      <Project>{081911BB-AADB-3DBF-B4C0-6F2BBEFAF12F}</Project>
+      <Name>ImGui</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WorkSpace\Reshade_Ex\reshade\build\deps\MinHook.vcxproj">
+      <Project>{9872AB23-67F9-3C04-8421-C3334E27E8F4}</Project>
+      <Name>MinHook</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WorkSpace\Reshade_Ex\reshade\build\ReShade.vcxproj">
+      <Project>{4FFC446E-3B09-330D-89F9-318B9DBB4EF0}</Project>
+      <Name>ReShade</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WorkSpace\Reshade_Ex\reshade\build\ReShadeFX.vcxproj">
+      <Project>{9A90C64B-4706-3DE7-8BF0-AEF37CEB967A}</Project>
+      <Name>ReShadeFX</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WorkSpace\Reshade_Ex\reshade\build\deps\fpng.vcxproj">
+      <Project>{286A7BE2-BCBD-3EC5-8CA4-3EC08800B23A}</Project>
+      <Name>fpng</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WorkSpace\Reshade_Ex\reshade\build\deps\glad.vcxproj">
+      <Project>{C5CC454B-85B6-3EA6-852F-6F7360EF92AF}</Project>
+      <Name>glad</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WorkSpace\Reshade_Ex\reshade\build\deps\jxl.vcxproj">
+      <Project>{208445AD-A8EF-3601-B1C7-182A4F478911}</Project>
+      <Name>jxl</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\WorkSpace\Reshade_Ex\reshade\build\deps\stb.vcxproj">
+      <Project>{9D5737FF-2D2A-315E-867F-4A5813F154CC}</Project>
+      <Name>stb</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,20 @@
+﻿ReShade Setup
+
+
+winexe
+C#
+.cs
+D:\WorkSpace\Reshade_Ex\reshade\intermediate\ReShade Setup\AnyCPU\Debug\
+ReShade.Setup
+none
+false
+DEBUG;TRACE;RESHADE_ADDON
+D:\WorkSpace\Reshade_Ex\reshade\setup\Properties\App.xaml
+7-1862564220
+
+13977710653
+12969229579
+Pages\SelectAddonsPage.xaml;Pages\SelectApiPage.xaml;Pages\SelectAppPage.xaml;Pages\SelectEffectsPage.xaml;Pages\SelectOperationPage.xaml;Pages\StatusPage.xaml;MainWindow.xaml;
+
+False
+
