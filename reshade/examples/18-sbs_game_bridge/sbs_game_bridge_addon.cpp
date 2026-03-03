@@ -50,6 +50,17 @@ static ComPtr<ID3D12DescriptorHeap> g_dx12_rtv_heap;
 static bool g_was_fx_feature_pressed = false;
 static bool g_fx_enabled = true;
 
+static void on_init_device(device* device) {
+	device_api api = device->get_api();
+	switch (api)
+	{
+		case reshade::api::device_api::d3d12:
+			g_cur_game_api = device_api::d3d12;
+			break;
+		default:
+			break;
+	}
+}
 // From ReShade resource_view (DX11 SRV handle) get texture size/format
 static bool get_srv_info(resource_view view, uint32_t& width, uint32_t& height, DXGI_FORMAT& fmt)
 {
@@ -199,14 +210,6 @@ static void on_reshade_finish_effects(effect_runtime* runtime, command_list* cmd
 	if (!g_fx_enabled)
 		return;
 
-	device* dev = runtime->get_device();
-	if (!dev)
-		return;
-
-	// Detect API (first time we see a D3D12 device, switch)
-	if (g_cur_game_api == device_api::d3d11 && dev->get_api() == device_api::d3d12)
-		g_cur_game_api = device_api::d3d12;
-
 	// Initialize BOE SDK once (works for both DX11/DX12)
 	if (!g_etdx_sdk_inited)
 	{
@@ -235,7 +238,7 @@ static void on_reshade_finish_effects(effect_runtime* runtime, command_list* cmd
 		// ---------------- DX12 PATH ----------------
 		resource_view chosen_srv = (g_sbs_srv_cached.handle != 0) ? g_sbs_srv_cached : g_sbs_srv_srgb_cached;
 
-		ID3D12Device* nativeDev = reinterpret_cast<ID3D12Device*>(dev->get_native());
+		ID3D12Device* nativeDev = reinterpret_cast<ID3D12Device*>(runtime->get_device()->get_native());
 		if (!nativeDev)
 		{
 			reshade::log::message(reshade::log::level::error, "[SBS] DX12: no native device");
@@ -246,7 +249,7 @@ static void on_reshade_finish_effects(effect_runtime* runtime, command_list* cmd
 		if (!cmd12)
 			return;
 
-		reshade::api::resource sbs_resource = dev->get_resource_from_view(chosen_srv);
+		reshade::api::resource sbs_resource = runtime->get_device()->get_resource_from_view(chosen_srv);
 		if (sbs_resource.handle == 0)
 		{
 			reshade::log::message(reshade::log::level::error, "[SBS] DX12: cannot get resource from SBS SRV");
@@ -257,7 +260,7 @@ static void on_reshade_finish_effects(effect_runtime* runtime, command_list* cmd
 		resource_view target_rv = (rtv.handle != 0) ? rtv : rtv_srgb;
 		if (target_rv.handle == 0)
 			return;
-		reshade::api::resource target_resource = dev->get_resource_from_view(target_rv);
+		reshade::api::resource target_resource = runtime->get_device()->get_resource_from_view(target_rv);
 		if (target_resource.handle == 0)
 		{
 			reshade::log::message(reshade::log::level::error, "[SBS] DX12: cannot get resource from RTV");
@@ -330,10 +333,10 @@ static void on_reshade_finish_effects(effect_runtime* runtime, command_list* cmd
 		int rst = BOE_ETDX_doInterlaceDx12((void*)cmd12, (void*)outputRes, (void*)&ourRtvHandle,
 			static_cast<int>(sbs_w), static_cast<int>(sbs_h), static_cast<int>(inFmt), DILR);
 
-		char result_log[256];
-		sprintf(result_log, "[SBS] doInterlace DX12 rst=%d inFmt=%d sbs=%ux%u screen=%ux%u",
-			rst, (int)inFmt, sbs_w, sbs_h, screen_w, screen_h);
-		reshade::log::message(reshade::log::level::warning, result_log);
+		//char result_log[256];
+		//sprintf(result_log, "[SBS] doInterlace DX12 rst=%d inFmt=%d sbs=%ux%u screen=%ux%u",
+		//	rst, (int)inFmt, sbs_w, sbs_h, screen_w, screen_h);
+		//reshade::log::message(reshade::log::level::warning, result_log);
 	}
 	else
 	{
@@ -512,9 +515,9 @@ static void on_reshade_finish_effects(effect_runtime* runtime, command_list* cmd
 		temp_srv.Reset();
 		temp_tex.Reset();
 
-		char log_buf[256];
-		sprintf(log_buf, "[SBS] doInterlace DX11 result=%d in:%ux%u in_fmt=%d out_fmt=%d", result, in_w, in_h, in_fmt, static_cast<int>(dstDesc.Format));
-		reshade::log::message(reshade::log::level::warning, log_buf);
+		//char log_buf[256];
+		//sprintf(log_buf, "[SBS] doInterlace DX11 result=%d in:%ux%u in_fmt=%d out_fmt=%d", result, in_w, in_h, in_fmt, static_cast<int>(dstDesc.Format));
+		//reshade::log::message(reshade::log::level::warning, log_buf);
 	}
 }
 
@@ -537,6 +540,7 @@ void register_addon_sbs_game_bridge()
 	reshade::register_event<reshade::addon_event::reshade_finish_effects>(on_reshade_finish_effects);
 	reshade::register_event<reshade::addon_event::reshade_reloaded_effects>(on_reshade_reloaded_effects);
 	reshade::register_event<reshade::addon_event::reshade_present>(on_reshade_present);
+	reshade::register_event<reshade::addon_event::init_device>(on_init_device);
 }
 
 void unregister_addon_sbs_game_bridge()
@@ -545,6 +549,7 @@ void unregister_addon_sbs_game_bridge()
 	reshade::unregister_event<reshade::addon_event::reshade_finish_effects>(on_reshade_finish_effects);
 	reshade::unregister_event<reshade::addon_event::reshade_reloaded_effects>(on_reshade_reloaded_effects);
 	reshade::unregister_event<reshade::addon_event::reshade_present>(on_reshade_present);
+	reshade::unregister_event<reshade::addon_event::init_device>(on_init_device);
 }
 
 #ifndef BUILTIN_ADDON
